@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Auth redirects
-LOGIN_REDIRECT_URL = 'pages:pages'
+# LOGIN_REDIRECT_URL = 'pages:pages'
 LOGOUT_REDIRECT_URL = 'home'
 
 # Emails
@@ -134,3 +134,7 @@ if DEBUG:
 else:
     # Configurar email para producción
     pass
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
